@@ -1,0 +1,89 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Quicksand', sans-serif ;
+    background: rgb(69, 71, 71);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Card{
+    height: 290px;
+    min-width: 270px;
+    width: 470px;
+    background:linear-gradient(45deg, #0c0200, #2f3131) ;
+    box-shadow: rgba(0,0,0,0.15) 0px, 5px, 15px, 0px;
+    position: relative;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+#Card img{
+    height: 370px;
+    max-width:100% ;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.25s;
+}
+
+#Card h2{
+    margin-top: 20px;
+    color: #e5aa1d;
+    font-weight: bold;
+    transition: all 0.25s;
+}
+
+#content p{
+    padding-top:20px;
+    width: 200px;
+    color: #fff;
+    margin-bottom: 25px;
+    transition: all 0.25s;
+}
+
+#content a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #0c0200;
+    background-color: #e5aa1d;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.25s;
+}
+
+#Card:hover img{
+    left: 83%;
+    height: 430px;
+}
+
+#Card:hover h2{
+    font-size: 33px;
+    margin-top: 15px;
+    letter-spacing: 2px;
+}
+
+#Card p,a{
+    opacity: 0;
+}
+
+#Card:hover p,
+#Card:hover a{
+    opacity: 1;
+}
+
+#aa:hover{
+    background-color: #fff;
+    cursor: pointer;
+}
